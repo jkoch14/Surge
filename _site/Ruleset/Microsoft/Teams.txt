@@ -1,0 +1,33 @@
+# ==============================
+# Microsoft Teams (Complete)
+# ==============================
+
+# Teams Core
+DOMAIN-SUFFIX,teams.microsoft.com
+DOMAIN-SUFFIX,teams.live.com
+DOMAIN-SUFFIX,teams.cdn.live.net
+
+# Teams Media / Meeting
+DOMAIN-SUFFIX,skype.com
+DOMAIN-SUFFIX,skypeassets.com
+DOMAIN-SUFFIX,skypeforbusiness.com
+
+# Microsoft 365 Identity
+DOMAIN-SUFFIX,login.microsoftonline.com
+DOMAIN-SUFFIX,login.live.com
+DOMAIN-SUFFIX,msauth.net
+DOMAIN-SUFFIX,msauthimages.net
+
+# Microsoft API / Front Door
+DOMAIN-SUFFIX,api.microsoft.com
+DOMAIN-SUFFIX,graph.microsoft.com
+
+# CDN / Static
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,azurefd.net
+DOMAIN-SUFFIX,akadns.net
+
+# Telemetry / Events
+DOMAIN,teams.events.data.microsoft.com
+DOMAIN-SUFFIX,events.data.microsoft.com
+DOMAIN-SUFFIX,vortex.data.microsoft.com
