@@ -1,72 +1,35 @@
-# ==== Apple 基础服务（推荐策略：APPLE） ====
+# =========================
+# Apple 全量直连（稳定版）
+# =========================
 
-# 主站 & 区域
-DOMAIN-SUFFIX,apple.com
-DOMAIN-SUFFIX,apple.com.cn
-DOMAIN-SUFFIX,apple.cn
-DOMAIN-SUFFIX,apple.net
-DOMAIN-SUFFIX,apple.co
-DOMAIN-SUFFIX,apple.news
+# Apple 自建 CDN & 资源
+DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+DOMAIN-SUFFIX,aaplimg.com,DIRECT
+DOMAIN-SUFFIX,mzstatic.com,DIRECT
 
-# Apple DNS / Anycast
-DOMAIN-SUFFIX,apple-dns.cn
-DOMAIN-SUFFIX,apple-dns.net
+# Apple 主服务域
+DOMAIN-SUFFIX,apple.com,DIRECT
+DOMAIN-SUFFIX,icloud.com,DIRECT
+DOMAIN-SUFFIX,icloud-content.com,DIRECT
 
-# iCloud 相关
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,icloud.com.cn
-DOMAIN-SUFFIX,icloud-content.com
-DOMAIN-SUFFIX,icloud.net.cn
-DOMAIN-SUFFIX,icloud.org
-DOMAIN-SUFFIX,icloud.de
-DOMAIN-SUFFIX,icloud.fr
-DOMAIN-SUFFIX,icloud.jp
-DOMAIN-SUFFIX,me.com
-DOMAIN-SUFFIX,me.com.akadns.net
+# App Store / iTunes / Music
+DOMAIN-SUFFIX,apps.apple.com,DIRECT
+DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+DOMAIN-SUFFIX,music.apple.com,DIRECT
+DOMAIN-SUFFIX,tv.apple.com,DIRECT
 
-# CloudKit
-DOMAIN-SUFFIX,apple-cloudkit.com
+# 系统更新 / 分发
+DOMAIN-SUFFIX,swcdn.apple.com,DIRECT
+DOMAIN-SUFFIX,swdist.apple.com,DIRECT
+DOMAIN-SUFFIX,mesu.apple.com,DIRECT
+DOMAIN-SUFFIX,oscdn.apple.com,DIRECT
 
-# App Store / iTunes
-DOMAIN-SUFFIX,apps.apple.com
-DOMAIN-SUFFIX,itunes.apple.com
-DOMAIN-SUFFIX,itunes.com
-DOMAIN-SUFFIX,itunesradio.com
-DOMAIN-SUFFIX,itunes-nocookie.com
-DOMAIN-SUFFIX,appstore.com
-DOMAIN-SUFFIX,applestore.com
-DOMAIN-SUFFIX,applestore.com.cn
-DOMAIN-SUFFIX,applestoreonline.com
-DOMAIN-SUFFIX,iphone.com
+# 校验 / 证书 / 激活
+DOMAIN-SUFFIX,ocsp.apple.com,DIRECT
+DOMAIN-SUFFIX,crl.apple.com,DIRECT
+DOMAIN-SUFFIX,valid.apple.com,DIRECT
 
-# Developer / TestFlight
-DOMAIN,developer.apple.com
-DOMAIN,testflight.apple.com
-DOMAIN-SUFFIX,appledeveloper.apple.com
-
-# Siri / 语音
-DOMAIN-SUFFIX,siri.com
-
-# 安全 / 认证
-DOMAIN-SUFFIX,appleid.apple.com
-DOMAIN-SUFFIX,appleid.cdn-apple.com
-DOMAIN-SUFFIX,valid.apple.com
-DOMAIN-SUFFIX,crl.apple.com
-DOMAIN-SUFFIX,ocsp.apple.com
-DOMAIN-SUFFIX,ocsp2.apple.com
-
-# Game Center / Stocks / Weather 等服务
-DOMAIN-SUFFIX,gc.apple.com
-DOMAIN-SUFFIX,static.gc.apple.com
-DOMAIN-SUFFIX,stocks-sparkline.apple.com
-DOMAIN-SUFFIX,weather-data.apple.com
-DOMAIN-SUFFIX,weather-map.apple.com
-DOMAIN-SUFFIX,weather-map2.apple.com
-DOMAIN-SUFFIX,weatherkit.apple.com
-
-# 支持/官网
-DOMAIN-SUFFIX,support.apple.com
-DOMAIN-SUFFIX,apple-support.akadns.net
-DOMAIN-SUFFIX,www.apple.com
-DOMAIN-SUFFIX,store.apple.com
-DOMAIN-SUFFIX,store.images.apple.com
+# Push / Siri / Maps
+DOMAIN-SUFFIX,push.apple.com,DIRECT
+DOMAIN-SUFFIX,siri.apple.com,DIRECT
+DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
