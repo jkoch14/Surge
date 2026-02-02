@@ -1,4 +1,11 @@
-# IPv4 - Cloudflare CDN
+# ==================================================
+# Cloudflare CDN / Edge IP Ranges + DNS (Remote Rule-Set)
+# Source of truth: Cloudflare ips-v4 / ips-v6 + API
+# ==================================================
+
+# ------------------
+# IPv4 - Cloudflare
+# ------------------
 IP-CIDR,173.245.48.0/20
 IP-CIDR,103.21.244.0/22
 IP-CIDR,103.22.200.0/22
@@ -15,7 +22,9 @@ IP-CIDR,104.24.0.0/14
 IP-CIDR,172.64.0.0/13
 IP-CIDR,131.0.72.0/22
 
-# IPv6 - Cloudflare CDN
+# ------------------
+# IPv6 - Cloudflare
+# ------------------
 IP-CIDR6,2400:cb00::/32
 IP-CIDR6,2606:4700::/32
 IP-CIDR6,2803:f800::/32
@@ -24,9 +33,17 @@ IP-CIDR6,2405:8100::/32
 IP-CIDR6,2a06:98c0::/29
 IP-CIDR6,2c0f:f248::/32
 
-# 重要：DNS 也要补全
+# -----------------------------
+# Cloudflare DNS / Service Host
+# -----------------------------
 DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,cloudflare.net
 DOMAIN-SUFFIX,cloudflare-ip.com
-DOMAIN,1.1.1.1
-DOMAIN,1.0.0.1
+
+# Cloudflare Public DNS (hostnames)
+DOMAIN-SUFFIX,cloudflare-dns.com
+DOMAIN,one.one.one.one
+
+# Cloudflare Public DNS (IPs) - 注意：IP 用 CIDR，不要写 DOMAIN
+IP-CIDR,1.1.1.1/32
+IP-CIDR,1.0.0.1/32
